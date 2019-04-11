@@ -1,3 +1,5 @@
+//completed for single subarray not for many
+
 #include <iostream>
 
 using namespace std;
