@@ -28,8 +28,8 @@ class LinkedList:
 class Stack:
     def __init__(self):
         self.linkedList=LinkedList()
-    def pushNode(self,data):
-        self.linkedList.addFirst(Node(data))
+    def pushNode(a,data):
+        a.linkedList.addFirst(Node(data))
     def popNode(self):
         return self.linkedList.delFirst()
 
