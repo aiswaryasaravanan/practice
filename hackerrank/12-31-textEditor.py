@@ -18,3 +18,5 @@ for time in range(times):
             print(s[int(option[1])-1])
     else :
         s=stack.pop()
+
+
