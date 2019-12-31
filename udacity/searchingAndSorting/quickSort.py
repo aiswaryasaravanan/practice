@@ -1,3 +1,5 @@
+#half way done
+
 def partition(arr, start, end):
     if start < end:
         pivot = arr[start]
