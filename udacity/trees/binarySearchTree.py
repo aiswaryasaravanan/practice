@@ -23,6 +23,26 @@ class BinarySearchTree:
                 else :
                     self.addNode(data,root.right)
 
+    # def deleteNode(self, data, root):
+    #     if data < root.data :
+    #         self.deleteNode(data, root.left) 
+    #     elif data > root.data :
+    #         self.deleteNode(data, root.right)
+    #     elif data == root.data :
+    #         if root.left is None and root.right is None :
+    #             root = None
+    #         elif root.left and root.right :
+    #             root = findRightMostInLeft(root)
+    #             self.deleteNode(root.data, root.left)
+    #         else :
+    #             if root.left :
+    #                 root = root.left
+    #             else :
+    #                 root = root.right
+    
+    def searchElement(self,data,root):
+        pass
+
     def inOrder(self,root):
         if root:
             self.inOrder(root.left)
@@ -31,8 +51,8 @@ class BinarySearchTree:
     
     def postOrder(self,root):
         if root:
-            self.inOrder(root.left)
-            self.inOrder(root.right)
+            self.postOrder(root.left)
+            self.postOrder(root.right)
             print(root.data,end=" ")
 
     def preOrder(self,root):
@@ -40,6 +60,13 @@ class BinarySearchTree:
             print(root.data,end=" ")
             self.preOrder(root.left)
             self.preOrder(root.right)
+
+    # def findRightMostInLeft(root) :
+    #     root = root.left
+    #     while root.right :
+    #         root = root.right
+    #     return root
+
 
 tree = BinarySearchTree()
 tree.addNode(5,tree.root)
@@ -55,3 +82,5 @@ print()
 tree.preOrder(tree.root)
 print()
 tree.postOrder(tree.root)
+
+# tree.deleteNode(4,tree.root)
