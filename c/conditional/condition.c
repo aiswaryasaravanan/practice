@@ -2,6 +2,7 @@
 void main(){
     
     int a = 1;
+    
     if(-1){                                
         printf("Yes...I'm in..\n");
     }
