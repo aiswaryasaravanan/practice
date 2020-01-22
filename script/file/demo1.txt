@@ -1,0 +1,7 @@
+ADding text
+my second line.
+
+This is from appendFile
+
+
+from appendFile too...
